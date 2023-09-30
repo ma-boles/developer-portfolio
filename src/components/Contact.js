@@ -8,7 +8,7 @@ export default function Contact () {
 
     return (
 
-        <div className="contact">
+        <div className="contact" id="contact">
             <h2 className="contact--h2">Let's <strong className="h2--strong">connect!</strong></h2>
 
             <div className="contactCard">

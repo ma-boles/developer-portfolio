@@ -7,7 +7,7 @@ import react from "../images/react-logo.jpg"
 
 export default function About () {
     return (
-        <div className="about">
+        <div className="about" id="about">
             <p className="p--about">I started on my coding journey November 2022. I've been studying and honing my skills ever since.
             Before I started on this path, I spent 6 years living and working in Japan. I enjoyed meeting new people, experiencing the culture, learning the language, eating delicious food, and I also picked up DJing as a fun hobby!
             </p>
