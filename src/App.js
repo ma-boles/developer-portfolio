@@ -1,16 +1,16 @@
-import './App.css';
-import './NavBar.css'
-import Navbar from './NavBar';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
+import './styles/App.css';
+import './styles/Navbar.css'
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Hero />
       <About />
       <Projects />
       <Contact />
