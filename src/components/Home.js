@@ -3,10 +3,17 @@ import '../styles/Home.css';
 
 export default function Home () {
     return (
-        <div className="home" id="home">
+        <section className="home" id="home">
             <div className="greeting">
-            <h2 className="h2--greeting">I'm<strong>Mary.</strong></h2>< br />
-                <h2 className="h1--greeting">Hello! <span><span className="span--strong">Front-End</span><br /> Web Developer</span></h2>
+                <h2 className="h1--greeting">Hello!</h2> <br />
+                <h2 className="h2--greeting">I'm<strong>Mary.</strong></h2>
+               <h2 className="h2--span"><span> <span className="span--strong">Front-End</span><br /> Web Developer</span></h2> <hr />
+
+            </div>
+            <div className="buttons--home">
+                <button className="home--buttons">ABOUT</button>
+                <button className="home--buttons">PROJECTS</button>
+                <button className="home--buttons">CONTACT</button>
             </div>
 
             {/*arrows*/}
@@ -17,7 +24,6 @@ export default function Home () {
                     <path className="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg></a>
             </div>
-        </div>
+        </section>
     )
 }
-{/*I'm a web developer who enjoys making websites that are easy to use and wonderfully pleasing to the eye.*/}

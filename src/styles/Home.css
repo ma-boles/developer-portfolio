@@ -7,85 +7,61 @@
 }
 
 .greeting {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background-color: transparent;
+    margin:10%;
+    text-align: justify;
+    line-height: 1.7rem;
 }
 .h1--greeting {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: left; 
-    top: 45%;
-    color: whitesmoke;
-    text-shadow: 10px 16px 12px #000000;
-    font-weight: 300;
-    font-size: 11.5em;
-    margin-top: .1em;
-    word-wrap: break-word;
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
 }
 
 .h2--greeting {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    position: absolute;
-    top: 15%;  
-    color: whitesmoke;
-    text-shadow: 10px 16px 12px #000000;
-    font-weight: 300;
-    font-size: 11.5em;
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
 }
-
+ .h2--span {
+    margin-top: 2rem;
+ }
 strong {
-    background-color: whitesmoke;
-    color: rgb(255, 68, 0);
+    color: rgb(0, 255, 0);
     font-style: italic;
-    margin-left: .55em;
-    height: 35%;
+    margin-left: .5rem;
 }
 
 .span--strong{
-    color: rgb(255, 68, 0);
-    font-size: 1em;
+    color: rgb(0, 255, 0);
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-top: .01em;    
-    margin-left: .2em;
     text-align: right;
+
 }
 .span--strong:hover {
     color: whitesmoke;
 }
 span {
     color: whitesmoke;
-    font-size: .25em;
-    margin-top: 1.4em;
-    margin-left: .5em;
+    font-size: 1.5rem;
     text-align: right;
 }
 span:hover {
-    color: rgb(255, 68, 0);
-}
-.message:hover {
-    background-color: transparent;
-}
-.messageP:hover {
-    color: rgb(255, 68, 0);
+    color: rgb(0, 255, 0);
 }
 
-.p--strong {
-    color: rgb(255, 68, 0);
-    font-weight: 700;
-    text-shadow: 5px 5px 5px black;
+hr {
+    filter: invert(.3);
 }
-.p--strong:hover {
-    color:whitesmoke;
+.p--message {
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: yellow;
 }
 
+.buttons--home {
+    display: none;
+}
 /*arrows*/
 .arrows {
 	width: 60px;
@@ -138,117 +114,42 @@ span:hover {
 /*media queries*/
 
 @media screen and (max-width: 768px) {
-    strong {
-        margin-left: .2em;
-        margin-right: .1em;
-    }
-    span {
-        margin-right: .2em;
-        margin-top: .5em;
-    }
-    .span--strong {
-        margin-right: 0em;
-    }
-}
-@media screen and (max-width:740px) {
-    .h2--greeting {
-        font-size: 11em;
-    }
-}
-@media screen and (max-width: 700px) {
-    .h2--greeting {
-        font-size: 10.5em;
-    }
-    span {
-        margin-right: .3em;
-        margin-left: 0em;
-        margin-top: .5em;    
-    }
-}
-@media screen and (max-width: 675px) {
-    .h2--greeting {
-        font-size: 10em;
-    }
-    .h1--greeting {
-        font-size: 10em;
-    }
-}
-@media screen and (max-width: 650px) {
-    .h2--greeting {
-        font-size: 9.4em;
-    }
-    .h1--greeting {
-        font-size: 9.5em;
-    }
-}
-@media screen and (max-width: 600px) {
-    .h2--greeting {
-        font-size: 9em;
-    }
-}
-@media screen and (max-width: 575px) {
-    .h2--greeting {
-        font-size: 8.4em;
-    }
-}
-@media screen and (max-width: 550px) {
-    .h2--greeting {
-        font-size: 8em;    
-        margin-top: .3em;
-        }
-        .h1--greeting {
-            font-size: 8em;
-        }
-}
-@media screen and (max-width: 515px) {
-    .h2--greeting {
-        font-size: 7.5em;    
-        margin-top: .3em;
-        }
-}
-@media screen and (max-width: 480px) {
-    .h2--greeting {
-        font-size: 7em;
-    }
-}
-@media screen and (max-width: 465px) {
-    .h2--greeting {
-        font-size: 6.6em;
-    }
-    .h1--greeting {
-        font-size: 7em;
+    .greeting {
+        margin-top: 8rem;
     }
 }
 @media screen and (max-width: 425px) {
-    .h2--greeting {
-    font-size: 6.5em;    
-    margin-top: .5em;
+    .greeting {
+    margin-top: 10rem;
     }
-    .h1--greeting {
-        font-size: 6.5em;
+    .buttons--home {
+        margin: .5em;
+        text-align: center;
+        display: block;
     }
-    .span--strong {
-        margin-right: 0em;
+    .home--buttons {
+        margin: .5rem;
+        padding: .7rem;
+        color: white;
+        background-color: transparent;
+        border: 1px double white;
     }
+    .home--buttons:hover {
+        background-color: white;
+        color: black;
+    }
+
 }
-@media screen and (max-width: 375px) {
-    .h2--greeting {
-        font-size: 5.7em;    
-        margin-top: .5em;
-        }
-        .h1--greeting {
-            font-size: 6em;
-        }
-}
+
 @media screen and (max-width: 320px) {
-    .h2--greeting {
-        font-size: 4.9em;    
-        margin-top: .5em;
-        }
-        .h1--greeting {
-            font-size: 4.9em;
-        }
-        .span--strong {
-            margin-right: 0em;
-        }
+   #home {
+        margin-bottom: 11rem;
+    }
+    .greeting {
+        margin-top: 13rem;
+    }
+    
+    .home--buttons {
+        padding: .6rem;
+    }
 }

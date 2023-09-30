@@ -114,3 +114,9 @@ li a:hover {
     margin-bottom: 4px;
     padding: 12px 9px;
 } 
+
+@media screen and (max-width: 425px) {
+    #navbar {
+        display: none;
+    }
+}

@@ -1,7 +1,11 @@
 .about {
     height: auto;
     width: 100%;
-    background-color: none;
+    margin-top: 15%;
+    padding-top: 10%;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
 }
 
 .p--about {
@@ -17,39 +21,33 @@
 }
 
 .skills--section {
-    margin-top: 2em;
+    padding-top: 5%;
+    margin-top: 3%;
+    width: 100%;
 }
-
-.skills--h2 {
-    /*-webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;*/
-    color: white;
-    text-align: center;
-    font-size: 2em;
-    margin-top: 2.5em;
+h2 {
+    margin: auto 0px;
+    padding-bottom: 10px;
 }
-
-.ul--skills {
+.logo--container {
     display: flex;
     flex-wrap: wrap;
-}
-
-.html, .css, .javascript, .react {
-    background-color: white;
-    width: 10em;
-    padding: .5em 1.3em;
     margin: auto;
-    margin-bottom: 3em;
-    border-radius: 15px;
-    box-shadow: 10px 16px 12px #000000;
-    flex-wrap: wrap;
-    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.html, .css,.javascript,.react {
+    padding: 1rem;
+    background-color: rgba(245, 245, 245, 0.374);
+    width: 15em;
+    margin: .5em;
+    border-radius: 10px;
 }
 
 .skills--logo {
-    width: 3em;
-    margin-top: .5em;
-    margin-left: 1em;
+    width: 3.5em;
+    margin: 0em 1em;
 }
 
 .li--skills {
@@ -68,14 +66,12 @@
 
 @media screen and (max-width: 425px) {
     .p--about {
-        width: 90%;
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .p--about {
-        width: 90%;
-    }
+    
 }
 
 @media screen and (max-width: 320px) {
