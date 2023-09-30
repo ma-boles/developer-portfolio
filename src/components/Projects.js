@@ -1,7 +1,8 @@
 import React from "react";
-import "./Projects.css";
-import placeholder from "./images/placeholder.jpg";
-import spotify from "./images/spotifyLogo.jpg"
+import { Link } from "react-router-dom";
+import "../styles/Projects.css";
+import placeholder from "../images/placeholder.jpg";
+import spotify from "../images/spotifyLogo.jpg"
 
 export default function Projects () {
 
@@ -19,7 +20,11 @@ export default function Projects () {
                         
                     <a target="_blank" rel="noopener"><button className="button--modal">LIVE</button></a>
                     <a target="_blank" rel="noopener" href="https://github.com/ma-boles/Spotify500"><button className="button--modal">CODE</button></a>
-                    <button className="button--modal">DETAILS</button>
+                    <button className="button--modal">
+                        <Link to="./pages/Spotify">
+                            DETAILS 
+                        </Link>
+                        </button>
                 </div>
                 
 
@@ -29,7 +34,11 @@ export default function Projects () {
                         <div className="p--lessonDetails">LessonBook, a site designed for freelance teachers and others, to stay better connected with their students.</div>
 
                         <a target="_blank" rel="noopener"><button className="button--modal">LIVE</button></a>                    <a  target="_blank" rel="noopener" href="https://github.com/ma-boles/LessonBook-version1"><button className="button--modal">CODE</button></a>
-                        <button className="button--modal">DETAILS</button>
+                        <button className="button--modal">
+                            <Link to="./pages/LessonBook">
+                            DETAILS
+                            </Link>
+                            </button>
                 </div>
         
 
@@ -38,7 +47,9 @@ export default function Projects () {
                         <div className="p--discogsDetails">Total re-imagining of the music e-commerce site, Discogs.</div>
 
                         <a target="_blank" rel="noopener"><button className="button--modal">LIVE</button></a>                       <button className="button--modal">CODE</button>
-                        <button className="button--modal">DETAILS</button>
+                        <button className="button--modal">DETAILS
+                           
+                            </button>
 
                 </div>
 

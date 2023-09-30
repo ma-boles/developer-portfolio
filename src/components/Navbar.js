@@ -1,9 +1,10 @@
 import React from "react";
-import "./NavBar.css";
-import logo from "./images/Grey-Yourlo-Logo.jpg";
-import github from "./images/GitHub_Logo.png";
-import linkedin from "./images/LinkedIn_2021.svg.png";
-import IGLogo from "./images/Instagram_logo.svg.png"
+import { Link } from "react-router-dom";
+import "../styles/Navbar.css";
+import logo from "../images/Grey-Yourlo-Logo.jpg";
+import github from "../images/GitHub_Logo.png";
+import linkedin from "../images/LinkedIn_2021.svg.png";
+import IGLogo from "../images/Instagram_logo.svg.png"
 
 
 
@@ -27,7 +28,9 @@ export default function Navbar () {
             <img className="logo"src={logo}></img>
         <div className="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">
+                    Home</a>
+                    </li>
                 <li><a href="index.html">About</a></li>
                 <li><a href="index.html">Projects</a></li>
                 <li><a href="index.html">Contact</a></li>

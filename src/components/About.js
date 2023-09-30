@@ -1,9 +1,9 @@
 import React from "react";
-import "./About.css"
-import html from "./images/HTML5_Badge.png";
-import css from "./images/CSS3_logo.png";
-import javascript from "./images/JavaScript-logo.png";
-import react from "./images/react-logo.jpg"
+import "../styles/About.css"
+import html from "../images/HTML5_Badge.png";
+import css from "../images/CSS3_logo.png";
+import javascript from "../images/JavaScript-logo.png";
+import react from "../images/react-logo.jpg"
 
 export default function About () {
     return (

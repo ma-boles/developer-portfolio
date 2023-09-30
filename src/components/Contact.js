@@ -1,8 +1,8 @@
 import React from "react";
-import "./Contact.css";
-import github2 from "./images/square-github.svg";
-import linkedin2 from "./images/linkedin.svg";
-import ig from "./images/instagram.svg";
+import "../styles/Contact.css";
+import github2 from "../images/square-github.svg";
+import linkedin2 from "../images/linkedin.svg";
+import ig from "../images/instagram.svg";
 
 export default function Contact () {
 

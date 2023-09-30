@@ -6,27 +6,10 @@
 
 .App {
   text-align: center;
-  margin: 0;
-  
+  margin: 0; 
 }
 
 body {
   margin: 0;
-  background-image: url(images/codioful-formerly-gradienta-G084bO4wGDA-unsplash.jpg) ;
-  background-size: cover;
-}
-
-/*
-.App::-webkit-scrollbar {
-  display: none;
-}*/
-
-.App-header {
-  background-image: url(images/codioful-formerly-gradienta-G084bO4wGDA-unsplash.jpg) ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  background: rgb(123,3,204);
+  background: linear-gradient(125deg, rgba(123,3,204,1) 20%, rgba(4,18,204,1) 50%, rgba(26,2,135,1) 100%);}
