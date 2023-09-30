@@ -1,0 +1,107 @@
+.contact {
+    height: auto;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 15em;
+}
+
+.contact--h2 {
+    margin-bottom: 1em;
+    font-size: 3em;
+    color: whitesmoke;
+    margin-top: 1em;
+}
+
+.h2--strong {
+    color: rgb(13, 0, 255);
+    text-shadow: 3px 5px 10px rgb(0, 0, 0);
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.contactCard {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.socialMedia  {
+    background-color: transparent;
+    width: 18em;
+    height: 10em;
+    margin: auto;
+    margin-bottom: 1em;
+    color: whitesmoke;
+    font-size: 1.3em;
+}
+
+.email {
+    background-color: transparent;
+    width: 18em;
+    height: 5em;
+    margin: 2em auto;
+    display: flex;
+    font-size: 1.4em;
+    font-style: normal;
+}
+
+.p--contact {
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+ 
+.li--contact {
+    margin: 1.2em 1em;
+    align-items: center;
+    display: block;
+}
+
+.img--contact {
+    height: 1.9em;
+    margin-right: 1em;
+    filter: invert(1); 
+}
+
+.img--contact:hover {
+    cursor: pointer;
+    filter: invert(0);
+}
+@media screen and (max-width: 727px) {
+    .contact--h2 {
+    margin-top: 1em;    
+    }
+}
+@media screen and (max-width: 425px) {
+    .contact {
+        position: relative;
+        text-align: center;
+    }
+    .contact--h2 {
+        position: absolute;
+        top: -100px;
+        left: 35px;
+    }
+}
+@media screen and (max-width: 384px) {
+    .contact {
+        position: relative;
+        text-align: center;
+    }
+    .contact--h2 {
+        position: absolute;
+        top: -160px;
+        left: 30px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .contact {
+        position: relative;
+        text-align: center;
+    }
+    .contact--h2 {
+        position: absolute;
+        top: -160px;
+        left: 60px;
+    }
+}

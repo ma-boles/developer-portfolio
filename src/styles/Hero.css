@@ -1,0 +1,254 @@
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 7em;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+.h1--greeting {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: left; 
+    top: 45%;
+    color: whitesmoke;
+    text-shadow: 10px 16px 12px #000000;
+    font-weight: 300;
+    font-size: 11.5em;
+    margin-top: .1em;
+    word-wrap: break-word;
+}
+
+.h2--greeting {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    top: 15%;  
+    color: whitesmoke;
+    text-shadow: 10px 16px 12px #000000;
+    font-weight: 300;
+    font-size: 11.5em;
+}
+
+strong {
+    background-color: whitesmoke;
+    color: rgb(255, 68, 0);
+    font-style: italic;
+    margin-left: .55em;
+    height: 35%;
+}
+
+.span--strong{
+    color: rgb(255, 68, 0);
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: .01em;    
+    margin-left: .2em;
+    text-align: right;
+}
+.span--strong:hover {
+    color: whitesmoke;
+}
+span {
+    color: whitesmoke;
+    font-size: .25em;
+    margin-top: 1.4em;
+    margin-left: .5em;
+    text-align: right;
+}
+span:hover {
+    color: rgb(255, 68, 0);
+}
+.message:hover {
+    background-color: transparent;
+}
+.messageP:hover {
+    color: rgb(255, 68, 0);
+}
+
+.p--strong {
+    color: rgb(255, 68, 0);
+    font-weight: 700;
+    text-shadow: 5px 5px 5px black;
+}
+.p--strong:hover {
+    color:whitesmoke;
+}
+
+/*arrows*/
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 0px;
+}
+
+.arrows path {
+	stroke: #fbfcfc;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 3s infinite;
+	-webkit-animation: arrow 3s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/*media queries*/
+
+@media screen and (max-width: 768px) {
+    strong {
+        margin-left: .2em;
+        margin-right: .1em;
+    }
+    span {
+        margin-right: .2em;
+        margin-top: .5em;
+    }
+    .span--strong {
+        margin-right: 0em;
+    }
+}
+@media screen and (max-width:740px) {
+    .h2--greeting {
+        font-size: 11em;
+    }
+}
+@media screen and (max-width: 700px) {
+    .h2--greeting {
+        font-size: 10.5em;
+    }
+    span {
+        margin-right: .3em;
+        margin-left: 0em;
+        margin-top: .5em;    
+    }
+}
+@media screen and (max-width: 675px) {
+    .h2--greeting {
+        font-size: 10em;
+    }
+    .h1--greeting {
+        font-size: 10em;
+    }
+}
+@media screen and (max-width: 650px) {
+    .h2--greeting {
+        font-size: 9.4em;
+    }
+    .h1--greeting {
+        font-size: 9.5em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .h2--greeting {
+        font-size: 9em;
+    }
+}
+@media screen and (max-width: 575px) {
+    .h2--greeting {
+        font-size: 8.4em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .h2--greeting {
+        font-size: 8em;    
+        margin-top: .3em;
+        }
+        .h1--greeting {
+            font-size: 8em;
+        }
+}
+@media screen and (max-width: 515px) {
+    .h2--greeting {
+        font-size: 7.5em;    
+        margin-top: .3em;
+        }
+}
+@media screen and (max-width: 480px) {
+    .h2--greeting {
+        font-size: 7em;
+    }
+}
+@media screen and (max-width: 465px) {
+    .h2--greeting {
+        font-size: 6.6em;
+    }
+    .h1--greeting {
+        font-size: 7em;
+    }
+}
+@media screen and (max-width: 425px) {
+    .h2--greeting {
+    font-size: 6.5em;    
+    margin-top: .5em;
+    }
+    .h1--greeting {
+        font-size: 6.5em;
+    }
+    .span--strong {
+        margin-right: 0em;
+    }
+}
+@media screen and (max-width: 375px) {
+    .h2--greeting {
+        font-size: 5.7em;    
+        margin-top: .5em;
+        }
+        .h1--greeting {
+            font-size: 6em;
+        }
+}
+@media screen and (max-width: 320px) {
+    .h2--greeting {
+        font-size: 4.9em;    
+        margin-top: .5em;
+        }
+        .h1--greeting {
+            font-size: 4.9em;
+        }
+        .span--strong {
+            margin-right: 0em;
+        }
+}

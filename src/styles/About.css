@@ -1,0 +1,85 @@
+.about {
+    height: auto;
+    width: 100%;
+    background-color: none;
+}
+
+.p--about {
+    display: flex;
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.148);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 1.5em;
+    font-size: 1.6em;
+}
+
+.skills--section {
+    margin-top: 2em;
+}
+
+.skills--h2 {
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;*/
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2.5em;
+}
+
+.ul--skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.html, .css, .javascript, .react {
+    background-color: white;
+    width: 10em;
+    padding: .5em 1.3em;
+    margin: auto;
+    margin-bottom: 3em;
+    border-radius: 15px;
+    box-shadow: 10px 16px 12px #000000;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.skills--logo {
+    width: 3em;
+    margin-top: .5em;
+    margin-left: 1em;
+}
+
+.li--skills {
+    color: black;
+    text-align: center;
+}
+
+.p--skills {
+    color: black;
+    margin-bottom: 0em;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 425px) {
+    .p--about {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .p--about {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .p--about {
+        width: 100%;
+    }
+}
