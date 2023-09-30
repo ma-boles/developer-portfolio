@@ -1,9 +1,9 @@
 import React from "react";
-import '../styles/Hero.css';
+import '../styles/Home.css';
 
-export default function Hero () {
+export default function Home () {
     return (
-        <div className="home">
+        <div className="home" id="home">
             <div className="greeting">
             <h2 className="h2--greeting">I'm<strong>Mary.</strong></h2>< br />
                 <h2 className="h1--greeting">Hello! <span><span className="span--strong">Front-End</span><br /> Web Developer</span></h2>
