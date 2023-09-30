@@ -1,5 +1,5 @@
 /* details for project pages */
-
+/*
 .pages--App {
 
     display: flex;
@@ -7,16 +7,8 @@
     align-items: left;
     font-size: 1.3em;
     color: white;
-    margin: 2em;
+    margin: 2%;
   }
-  /*
-  .details {
-      height: 25em;
-      width: 90%;
-      background-color: transparent;
-      border: 1px blue solid;
-      margin: auto;
-    }
   */
   .details--button {
     background-color: transparent;
@@ -46,15 +38,11 @@
   
   .details {
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 0;
+    margin:10%
+   
   }
   
-  .details--div {
-   width: 60em;
-   margin: auto;
-  }
+  
   
   .details--img {
     background-color: white;
@@ -63,25 +51,7 @@
     height: 17em;
     margin: 1em;
   }
-  
-  .details--strong {
-      font-weight: 700;
-      color: rgb(255, 0, 115);
-      background-color: black;
-      margin-right: 5px;
-  }
-  
-  .lessonBook--strong {
-    background-color: whitesmoke;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-  }
-  
-  .details--p{
-      text-align: justify;
-      font-size: .9em;
-      margin-right: 1em;   
-  }
+
   
   .details--button2 {
     background-color: whitesmoke;

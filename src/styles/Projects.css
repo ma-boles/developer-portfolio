@@ -1,15 +1,14 @@
 .projects {
-    background-color: none;
+    background-color: rgba(255, 255, 255, 0.209);
     height: auto;
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
-    margin-top: 17em;
-}
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    padding: 5% 0%;
+    border-radius: 10px;
 
-.projects--h2 {
-    margin-bottom: 2em;
-    font-size: 2em;
-    text-align: center;
 }
 
 .project-grid {
@@ -18,19 +17,19 @@
 }
 
 .spotify {
-    background-color: rgba(245, 245, 245, 0.148);
+    background-color: rgba(245, 245, 245, 0.071);
     border-radius: 10px;
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    margin: 1em auto ;
+    margin: 1em auto;
     position: relative;
     flex-wrap: wrap;
     width: 14em;
 }
 
 .lessonBook {
-    background-color: rgba(245, 245, 245, 0.148);
+    background-color: rgba(245, 245, 245, 0.071);
     border-radius: 10px;
     padding: 20px;
     font-size: 30px;
@@ -53,77 +52,6 @@
     width: 14em;
 }
 
-.p--spotifyDetails {
-    font-size: .7em;
-    font-weight: 700;
-    text-align: justify;
-    position: absolute;
-    top: 0;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-top: 8em;
-    padding: .2em;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.904);
-    visibility: hidden;
-    -webkit-transition: visibility 2s, opacity 0.5s linear;
-    transition: visibility 2s, opacity 0s linear;
-}
-.spotify:hover {
-    cursor: pointer;
-}
-.spotify:hover div {
-    visibility: visible;
-    opacity: 0.9;
-}
-
-.p--lessonDetails{
-    font-size: .7em;
-    font-weight: 700;
-    text-align: justify;
-    position: absolute;
-    top: 0;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-top: 6.7em;
-    padding: .2em;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.904);
-    visibility: hidden;
-    -webkit-transition: visibility 1s, opacity 0.5s linear;
-    transition: visibility 1s, opacity 0.5s linear;
-}
-.lessonBook:hover {
-    cursor: pointer;
-}
-.lessonBook:hover div {
-    visibility: visible;
-    opacity: 0.9;
-}
-
-.p--discogsDetails {
-    font-size: .7em;
-    font-weight: 700;
-    text-align: justify;
-    position: absolute;
-    top: 0;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-top: 8em;
-    padding: .2em;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.904);
-    visibility: hidden;
-    -webkit-transition: visibility 1s, opacity 0.5s linear;
-    transition: visibility 1s, opacity 0.5s linear;
-}
-.discogs:hover {
-    cursor: pointer;
-}
-.discogs:hover div {
-    visibility: visible;
-    opacity: 0.9;
-}
 
 .p--spotify {
  margin-bottom: .5em;
@@ -140,6 +68,37 @@
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+}
+.details--div {
+    width: 70%;
+    margin: auto;
+    /*padding: 3% 2%*/
+}
+     
+  .details--strong {
+    font-weight: 700;
+    color: whitesmoke;
+    background-color: black;
+    margin-right: 1rem;
+    margin-left: 0px;
+}
+
+.lessonBook--strong {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  margin-left: 0px;
+}
+
+.details--p{
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.button--group {
+    margin-bottom: 5%;
+    text-align: right;
 }
 
 .button--modal {
