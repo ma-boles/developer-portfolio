@@ -1,13 +1,11 @@
 .home {
     position: relative;
     height: 100vh;
-    width: 100%;
     overflow: hidden;
-    margin-bottom: 7em;
 }
 
 .greeting {
-    margin:10%;
+    margin: 13% 10%;
     text-align: justify;
     line-height: 1.7rem;
 }

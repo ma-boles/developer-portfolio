@@ -23,8 +23,12 @@ export default function Projects () {
                             <a target="_blank" rel="noopener"><button className="button--modal" id="live">LIVE</button></a>
                             <a target="_blank" rel="noopener" href="https://github.com/ma-boles/Spotify500"><button className="button--modal">CODE</button></a>
                         </div>
+                        <hr />
                 </div>
-
+                
+                    
+                
+                    
                 <div className="lessonBook">
                     <p className="p--lessonBook">LessonBook</p> 
                     <img src={placeholder} className="img--placeholder" id="img--modal" ></img>

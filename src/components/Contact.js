@@ -8,7 +8,7 @@ export default function Contact () {
 
     return (
 
-        <div className="contact" id="contact">
+        <section className="contact" id="contact">
             <h2 className="contact--h2">Let's <strong className="h2--strong">connect!</strong></h2>
 
             <div className="contactCard">
@@ -16,19 +16,12 @@ export default function Contact () {
                     <p className="p--contact">email@email.com</p>
                 </div>
                 <div className="socialMedia">
-                    <ul className="ul--contact">
-                        <li className="li--contact">
-                            <a href="https://github.com/ma-boles"><img src={github2} className="img--contact"></img></a></li>
-                        <li className="li--contact">
-                            <a href="https://www.linkedin.com/in/mary-boles/"><img src={linkedin2} className="img--contact"></img></a></li>
-                        <li className="li--contact">
-                            <a href="https://www.instagram.com/mab.codes/"><img src={ig} className="img--contact"></img></a></li>
-                    </ul>
+                    <a href="https://github.com/ma-boles"><img src={github2} className="img--contact"></img></a>
+                    <a href="https://www.linkedin.com/in/mary-boles/"><img src={linkedin2} className="img--contact"></img></a>
+                    <a href="https://www.instagram.com/mab.codes/"><img src={ig} className="img--contact"></img></a>
                 </div>
-            
-                
             </div>
-        </div>
+        </section>
 
     )
 

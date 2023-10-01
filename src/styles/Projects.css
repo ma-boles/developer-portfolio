@@ -8,7 +8,6 @@
     margin-top: 20%;
     padding: 5% 0%;
     border-radius: 10px;
-
 }
 
 .project-grid {
@@ -40,7 +39,7 @@
     width: 14em;
 }
 
-.discogs {
+/*.discogs {
     background-color: rgba(245, 245, 245, 0.148);
     border-radius: 10px;
     padding: 20px;
@@ -50,8 +49,7 @@
     position: relative;
     flex-wrap: wrap;
     width: 14em;
-}
-
+}*/
 
 .p--spotify {
  margin-bottom: .5em;
@@ -72,7 +70,6 @@
 .details--div {
     width: 70%;
     margin: auto;
-    /*padding: 3% 2%*/
 }
      
   .details--strong {
@@ -118,15 +115,43 @@
     color: #01424b;
     box-shadow: 3px 3px 25px #01424b93;
 }
+hr {
+    margin: 3em 0em;   
+    filter: invert(.4); 
+}
 
+@media screen and (max-width: 425px) {
+    .spotify, 
+    .lessonBook {
+       width: 100%;
+       text-align: center;
+       justify-content: center;
+       background-color: transparent;
+    }
+    .img--placeholder {
+        width: 100%;
+    }
+    .details--div {
+        margin-right: 10%;
+        margin-left: 10%;
+        width: 100%;
+    }
+    .button--modal {
+        margin-top: 1.3em;
+    }
+}
 @media screen and (max-width: 375px) {
     .projects {
-        margin-top: 25em;
+        margin-top: 25%; 
+        width: 100%;  
     }
 }
 
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 320px) {
     .projects {
-        margin-top: 40em;
+        margin-top: 50%;
+    }
+    .button--modal {
+        padding: .1em;
     }
 }

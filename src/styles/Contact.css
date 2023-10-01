@@ -1,22 +1,19 @@
 .contact {
     height: auto;
     text-align: center;
-    position: relative;
     flex-wrap: wrap;
-    margin-top: 15em;
+    margin-top: 15%;
 }
 
 .contact--h2 {
-    margin-bottom: 1em;
     font-size: 3em;
     color: whitesmoke;
-    margin-top: 1em;
 }
 
 .h2--strong {
-    color: rgb(13, 0, 255);
+    color: rgb(0, 255, 0);
     text-shadow: 3px 5px 10px rgb(0, 0, 0);
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.136);
     font-weight: bold;
 }
 
@@ -29,6 +26,7 @@
     background-color: transparent;
     width: 18em;
     height: 10em;
+    padding-left: 1em;
     margin: auto;
     margin-bottom: 1em;
     color: whitesmoke;
@@ -67,41 +65,31 @@
     cursor: pointer;
     filter: invert(0);
 }
-@media screen and (max-width: 727px) {
-    .contact--h2 {
-    margin-top: 1em;    
-    }
-}
+
+/* mobile view */
 @media screen and (max-width: 425px) {
     .contact {
-        position: relative;
         text-align: center;
+        margin-top: 45%;
     }
-    .contact--h2 {
-        position: absolute;
-        top: -100px;
-        left: 35px;
+    
+    .email {
+        width: 100%;
+    }
+    .socialMedia {
+        width: 100%;
+        margin: 0px;
     }
 }
-@media screen and (max-width: 384px) {
+
+@media screen and (max-width: 375px){
     .contact {
-        position: relative;
-        text-align: center;
-    }
-    .contact--h2 {
-        position: absolute;
-        top: -160px;
-        left: 30px;
+        margin-top: 55%;
     }
 }
+
 @media screen and (max-width: 320px) {
     .contact {
-        position: relative;
-        text-align: center;
-    }
-    .contact--h2 {
-        position: absolute;
-        top: -160px;
-        left: 60px;
+        margin-top: 45%;
     }
 }
