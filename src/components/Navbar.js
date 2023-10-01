@@ -1,5 +1,4 @@
 import React from "react";
-/*import { Link } from "react-router-dom";*/
 import { useEffect, useRef } from "react";
 import "../styles/Navbar.css";
 import logo from "../images/Grey-Yourlo-Logo.jpg";
@@ -56,8 +55,6 @@ export default function Navbar () {
             document.getElementById("navbar").style.top = "-80px";
         }
     }
-
-    /*<a href ="/#contact-me" onClick={handleClick("contactme")}>Contact Me</a>*/
 
 
     return (
