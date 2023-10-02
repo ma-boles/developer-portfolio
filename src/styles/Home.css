@@ -60,6 +60,9 @@ hr {
 .buttons--home {
     display: none;
 }
+
+
+
 /*arrows*/
 .arrows {
 	width: 60px;
@@ -136,7 +139,7 @@ hr {
         background-color: white;
         color: black;
     }
-
+    
 }
 
 @media screen and (max-width: 320px) {
@@ -150,4 +153,5 @@ hr {
     .home--buttons {
         padding: .6rem;
     }
+    
 }

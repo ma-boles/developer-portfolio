@@ -72,6 +72,8 @@ export default function Home () {
                     <path className="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg></a>
             </div>
+
+            
         </section>
     )
 }
