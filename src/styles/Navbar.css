@@ -115,8 +115,32 @@ li a:hover {
     padding: 12px 9px;
 } 
 
+.top--button {
+    background-color: transparent;
+    border: 2px double rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    padding:  .6rem .8rem;
+    display: none;  
+    top: 0px;
+    right: 0px; 
+    position: absolute;
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 425px) {
     #navbar {
         display: none;
     }
+    .top--button {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+.top--button {
+    padding: .7rem;
+}
 }

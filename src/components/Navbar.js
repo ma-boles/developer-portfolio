@@ -56,40 +56,66 @@ export default function Navbar () {
         }
     }
 
+/*
+    //scroll function for mobile view top button
+    let topbutton = document.getElementById("top--button");
+    window.onscroll = function() {scrollTopFunction()};
+    
+    //top button appears/disappears on scroll
+    function scrollTopFunction () {
+      if(document.body.scrollTop > 520 ||
+        document.documentElement.scrollTop > 520) {
+          topbutton.style.display = "block";
+        } else {
+          topbutton.style.display = "none" ;
+        }
+    }
+
+    //back to top function
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+*/
 
     return (
         <>
         <nav id="navbar">
             <img className="logo"src={logo}></img>
-        <div className="navbar">
-            <ul>
-                <li><a href="/#home" onClick={handleClick("home")}>Home</a></li>
-                <li><a href="/#about" onClick={handleClick("about")}>About</a></li>
-                <li><a href="/#projects" onClick={handleClick("projects")}>Projects</a></li>
-                <li><a href="/#contact" onClick={handleClick("contact")}>Contact</a></li>
-                <li className="dropdown">
-                    <button className="dropdown--menu">Socials</button>
-                        <div className="dropdown-content">
-                            <a href="https://github.com/ma-boles" >
-                                <div className="socials">
-                                <img src={github} className="logo--github"></img>
-                                </div>
-                                </a>
-                            <a href="https://www.linkedin.com/in/mary-boles/" >
-                                <div className="socials">
-                                <img src={linkedin} className="logo--linkedin"></img>
-                                </div>
-                                </a> 
-                            <a href="https://www.instagram.com/mab.codes/">
-                                <div className="socials">
-                                <img src={IGLogo} className="logo--instagram"></img>
-                                </div>
-                                </a> 
-                        </div>
-                </li>
-            </ul>
-        </div>
+          <div className="navbar">
+              <ul>
+                  <li><a href="/#home" onClick={handleClick("home")}>Home</a></li>
+                  <li><a href="/#about" onClick={handleClick("about")}>About</a></li>
+                  <li><a href="/#projects" onClick={handleClick("projects")}>Projects</a></li>
+                  <li><a href="/#contact" onClick={handleClick("contact")}>Contact</a></li>
+                  <li className="dropdown">
+                      <button className="dropdown--menu">Socials</button>
+                          <div className="dropdown-content">
+                              <a href="https://github.com/ma-boles" >
+                                  <div className="socials">
+                                  <img src={github} className="logo--github"></img>
+                                  </div>
+                                  </a>
+                              <a href="https://www.linkedin.com/in/mary-boles/" >
+                                  <div className="socials">
+                                  <img src={linkedin} className="logo--linkedin"></img>
+                                  </div>
+                                  </a> 
+                              <a href="https://www.instagram.com/mab.codes/">
+                                  <div className="socials">
+                                  <img src={IGLogo} className="logo--instagram"></img>
+                                  </div>
+                                  </a> 
+                          </div>
+                  </li>
+              </ul>
+          </div>
         </nav>
+
+        <div className="top--button--group">
+          <button className="top--button" onClick={topFunction()} id="top--button">
+          TOP</button>
+        </div>
         </>
     )
 }
