@@ -13,16 +13,41 @@
     font-size: 4rem;
     padding: 0px;
     margin: 0px;
+    animation: myAnim 6s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 .h2--greeting {
     font-size: 4rem;
     padding: 0px;
     margin: 0px;
+    animation: myAnim2 2s ease 0s 1 normal forwards;
 }
  .h2--span {
     margin-top: 2rem;
+    
  }
+ @keyframes myAnim2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
 strong {
     color: rgb(0, 255, 0);
     font-style: italic;
@@ -30,23 +55,23 @@ strong {
 }
 
 .span--strong{
-    color: rgb(0, 255, 0);
     font-size: 1.5rem;
     font-weight: 700;
     text-align: right;
-
+    color: rgb(0, 255, 0);
 }
 .span--strong:hover {
     color: whitesmoke;
 }
 span {
-    color: whitesmoke;
     font-size: 1.5rem;
     text-align: right;
+    color: whitesmoke;
 }
 span:hover {
     color: rgb(0, 255, 0);
 }
+
 
 hr {
     filter: invert(.3);
