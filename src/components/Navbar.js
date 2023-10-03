@@ -56,27 +56,22 @@ export default function Navbar () {
         }
     }
 
-/*
+
     //scroll function for mobile view top button
     let topbutton = document.getElementById("top--button");
+    let topA = document.getElementById("top--a");
     window.onscroll = function() {scrollTopFunction()};
     
     //top button appears/disappears on scroll
     function scrollTopFunction () {
       if(document.body.scrollTop > 520 ||
         document.documentElement.scrollTop > 520) {
-          topbutton.style.display = "block";
+          topbutton.style.display = "block"; topA.style.display = "block";
         } else {
-          topbutton.style.display = "none" ;
+          topbutton.style.display = "none"; topA.style.display = "none";
         }
     }
 
-    //back to top function
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-*/
 
     return (
         <>
@@ -113,8 +108,9 @@ export default function Navbar () {
         </nav>
 
         <div className="top--button--group">
-          <button className="top--button" onClick={topFunction()} id="top--button">
-          TOP</button>
+          <button className="top--button" id="top--button" >
+          <a href="/#home" onClick={handleClick("home")} id="top--a">TOP
+         </a></button>
         </div>
         </>
     )
