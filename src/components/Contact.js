@@ -19,23 +19,23 @@ export default function Contact () {
         const newErrors = {};
 
         if(!formData.name.trim()) {
-            newErrors.name = "Name is required";
+            newErrors.name = "* Name is required";
         }
 
         if(!formData.email.trim()) {
-            newErrors.email = "Email is required";
+            newErrors.email = "* Email is required";
         } else if(
             !/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(
                 formData.email
             )
         ) {
-            newErrors.email = "Invalid email address";
+            newErrors.email = "* Invalid email address";
         }
 
         if(!formData.message.trim()) {
-            newErrors.message = "Message is required";
+            newErrors.message = "* Message is required";
         } else if (formData.message.length < 10) {
-            newErrors.message = "Message should be at least 10 characters long";
+            newErrors.message = "* Message should be at least 10 characters long";
         }
 
         setErrors(newErrors);
@@ -99,9 +99,9 @@ export default function Contact () {
                         <button type="submit" className="form--button">Submit</button>
                     </div>
                 </form>
-               
+                <hr className="hr--contact" />
             </div>
-           
+            <p className="copyright--contact">&copy; 2023 Mary Boles</p>
         </section>
 
     );
