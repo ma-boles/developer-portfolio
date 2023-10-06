@@ -2,12 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Projects.css";
 import placeholder from "../images/placeholder.jpg";
-import spotify from "../images/spotifyLogo.jpg"
+import spotify from "../images/RS-header.jpg"
 
 export default function Projects () {
-
     return (
-        
         <section className="projects" id="projects">
             <div className="project-grid">
                 <div className="spotify">
@@ -25,17 +23,10 @@ export default function Projects () {
                         </div>
                         <hr />
                 </div>
-                
-                    
-                
                     
                 <div className="lessonBook">
                     <p className="p--lessonBook">LessonBook</p> 
                     <img src={placeholder} className="img--placeholder" id="img--modal" ></img>
-                       
-
-                       
-                        
                 </div>
                 <div className='details--div'>
                         <p className='details--p'> <strong className='details--strong'>BACKSTORY:</strong> While working as an English teacher in Japan, the school I worked for didn't have an effective system for taking attendance, keeping records, or communicating between teachers and students. This was inefficient and led to slower communication times. </p><br />
@@ -46,7 +37,6 @@ export default function Projects () {
                             <a target="_blank" rel="noopener"><button className="button--modal" id="live">LIVE</button></a>                   
                             <a  target="_blank" rel="noopener" href="https://github.com/ma-boles/LessonBook-version1"><button className="button--modal">CODE</button></a>
                          </div>
-                        
                     </div>
 
                 {/*<div className="discogs"><p className="p--discogs">Discogs</p>
@@ -54,10 +44,7 @@ export default function Projects () {
                         <div className="p--discogsDetails">Total re-imagining of the music e-commerce site, Discogs.</div>
 
                         <a target="_blank" rel="noopener"><button className="button--modal">LIVE</button></a>                       <button className="button--modal">CODE</button>
-                        <button className="button--modal">DETAILS
-                           
-                            </button>
-
+                        <button className="button--modal">DETAILS</button>
                 </div>*/}
 
             </div>
