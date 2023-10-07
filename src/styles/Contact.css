@@ -130,6 +130,9 @@ textarea {
         width: 100%;
         margin: 0px;
     }
+    .social--container {
+        width: 25%;
+    }
     input,
     textarea,
     .form--button {
@@ -141,16 +144,22 @@ textarea {
     .contact {
         margin-top: 55%;
     }
+    .social--container {
+        width: 30%;
+    }
     input,
     textarea,
     .form--button {
         width: 95%;
-    }
+    } 
 }
 
 @media screen and (max-width: 320px) {
     .contact {
         margin-top: 45%;
+    }
+    .social--container {
+        width: 35%;
     }
     input,
     textarea,
