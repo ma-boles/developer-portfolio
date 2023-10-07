@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Projects.css";
-import placeholder from "../images/placeholder.jpg";
+import placeholder from "../images/pexels-alleksana-4271927.jpg";
 import spotify from "../images/RS-header.jpg"
 
 export default function Projects () {
