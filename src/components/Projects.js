@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Projects.css";
 import placeholder from "../images/pexels-alleksana-4271927.jpg";
-import spotify from "../images/RS-header.jpg"
+import spotify from "../images/RS-header1.jpg"
 
 export default function Projects () {
     return (
@@ -10,7 +10,7 @@ export default function Projects () {
             <div className="project-grid">
                 <div className="spotify">
                     <p className="p--spotify">Spotify 500</p>
-                    <img src={spotify} className="img--placeholder" id="img--modal" ></img>
+                    <img src={spotify} className="img--placeholder" id="img--modal" alt="spotify project logo"></img>
                     
                 </div>
                 <div className='details--div'>
@@ -26,7 +26,7 @@ export default function Projects () {
                     
                 <div className="lessonBook">
                     <p className="p--lessonBook">LessonBook</p> 
-                    <img src={placeholder} className="img--placeholder" id="img--modal" ></img>
+                    <img src={placeholder} className="img--placeholder" id="img--modal" alt="lessonBook logo" ></img>
                 </div>
                 <div className='details--div'>
                         <p className='details--p'> <strong className='details--strong'>BACKSTORY:</strong> While working as an English teacher in Japan, the school I worked for didn't have an effective system for taking attendance, keeping records, or communicating between teachers and students. This was inefficient and led to slower communication times. </p><br />

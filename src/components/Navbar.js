@@ -76,7 +76,7 @@ export default function Navbar () {
     return (
         <>
         <nav id="navbar">
-            <img className="logo"src={logo}></img>
+            <img className="logo"src={logo} alt="website logo"></img>
           <div className="navbar">
               <ul>
                   <li><a href="/#home" onClick={handleClick("home")}>Home</a></li>
@@ -88,17 +88,17 @@ export default function Navbar () {
                           <div className="dropdown-content">
                               <a href="https://github.com/ma-boles" >
                                   <div className="socials">
-                                  <img src={github} className="logo--github"></img>
+                                  <img src={github} className="logo--github" alt="Github logo"></img>
                                   </div>
                                   </a>
                               <a href="https://www.linkedin.com/in/mary-boles/" >
                                   <div className="socials">
-                                  <img src={linkedin} className="logo--linkedin"></img>
+                                  <img src={linkedin} className="logo--linkedin" alt="LinkedIn logo"></img>
                                   </div>
                                   </a> 
                               <a href="https://www.instagram.com/mab.codes/">
                                   <div className="socials">
-                                  <img src={IGLogo} className="logo--instagram"></img>
+                                  <img src={IGLogo} className="logo--instagram" alt="Instagram logo"></img>
                                   </div>
                                   </a> 
                           </div>

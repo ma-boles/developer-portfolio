@@ -20,28 +20,28 @@ export default function About () {
                     <div className="logo--container">
                         <div className="html">
                         <li className="li--skills">
-                            <img className="skills--logo" src={html}></img>
+                            <img className="skills--logo" src={html} alt="html logo"></img>
                             <p className="p--skills">HTML</p>
                             </li>  
                         </div>
 
                         <div className="css">
                         <li className="li--skills">
-                            <img className="skills--logo" src={css}></img>
+                            <img className="skills--logo" src={css} alt="css logo"></img>
                             <p className="p--skills">CSS</p>
                         </li>
                         </div>
 
                         <div className="javascript">
                         <li className="li--skills">
-                            <img className="skills--logo" src={javascript}></img>
+                            <img className="skills--logo" src={javascript}  alt="JavaScript logo"></img>
                             <p className="p--skills">JavaScript</p>
                         </li>
                         </div>
                             
                         <div className="react">
                         <li className="li--skills">
-                            <img className="skills--logo" src={react}></img>
+                            <img className="skills--logo" src={react} alt="react logo"></img>
                             <p className="p--skills">React</p>
                         </li>
                         </div>

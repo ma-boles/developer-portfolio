@@ -63,7 +63,7 @@ export default function Contact () {
             
             <div className="socialMedia">
                 <div className="social--container">
-                    <a href="https://github.com/ma-boles"><img src={github2} className="img--contact" alt="Gsithub icon"></img></a>
+                    <a href="https://github.com/ma-boles"><img src={github2} className="img--contact" alt="Github icon"></img></a>
                     <a href="https://www.linkedin.com/in/mary-boles/"><img src={linkedin2} className="img--contact" alt="LinkedIn icon"></img></a>
                     <a href="https://www.instagram.com/mab.codes/"><img src={ig} className="img--contact" alt="Instagram icon"></img></a>
                     </div>
