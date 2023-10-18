@@ -18,6 +18,7 @@
     position: fixed;
     z-index: 2;
     flex-wrap: wrap;
+    top: -80px;
 }
 
 ul{ 
@@ -140,7 +141,6 @@ li a:hover {
     .top--button {
         display: block;
     }
-
 }
 
 @media screen and (max-width: 320px) {

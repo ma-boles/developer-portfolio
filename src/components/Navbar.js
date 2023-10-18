@@ -59,18 +59,17 @@ export default function Navbar () {
 
     //scroll function for mobile view top button
     let topbutton = document.getElementById("top--button");
-    let topA = document.getElementById("top--a");
     window.onscroll = function() {scrollTopFunction()};
     
     //top button appears/disappears on scroll
     function scrollTopFunction () {
       if(document.body.scrollTop > 520 ||
-        document.documentElement.scrollTop > 520) {
-          topbutton.style.display = "block"; topA.style.display = "block";
+        document.documentElement.scrollTop > 270) {
+          topbutton.style.display = "0px";
         } else {
-          topbutton.style.display = "none"; topA.style.display = "none";
+          topbutton.style.display = "-80px"; 
         }
-    }
+    };
 
 
     return (
