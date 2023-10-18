@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import './styles/App.css';
 import './styles/Navbar.css';
 
-import Navbar from './components/Navbar';
+/*import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from "./components/Footer"
+import Footer from "./components/Footer"*/
+
+const Navbar = lazy(() => import('./components/Navbar')); 
+const Home = lazy(() => import('./components/Home')); 
+const About = lazy(() => import('./components/About')); 
+const Projects = lazy(() => import('./components/Projects')); 
+const Contact = lazy(() => import('./components/Contact')); 
+const Footer = lazy(() => import('./components/Footer')); 
 
 
 function App() {
@@ -16,13 +23,26 @@ function App() {
   return (
     <>
     <header>
-      <Navbar />
+      <Suspense fallback = {null}>
+        <Navbar />
+      </Suspense>
     </header>
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
+
+      <Suspense fallback = {null}>
+        <Home />
+      </Suspense>
+      <Suspense fallback = {null}>
+        <About />
+      </Suspense>
+      <Suspense fallback = {null}>
+        <Projects />
+      </Suspense>
+      <Suspense fallback = {null}>
+        <Contact />
+      </Suspense>
+      <Suspense fallback = {null}>
+        <Footer />
+      </Suspense>
     </>
   );
 }
